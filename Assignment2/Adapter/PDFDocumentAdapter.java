@@ -13,8 +13,6 @@ public class PDFDocumentAdapter implements Document {
     //Задача: Реализуйте логику для адаптера, чтобы методы PDF-документа могли быть использованы через интерфейс Document.
         @Override
     public void display() {
-        // Адаптируем метод display() для PDF документа
-        System.out.println("Адаптированный вывод для PDF-документа:");
         pdfDocument.openPDF();
         pdfDocument.showPDF();
     }
