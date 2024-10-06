@@ -8,6 +8,11 @@ public class SimpleDocumentRenderer extends DocumentRenderer {
 
     //Задача: Реализуйте вызов метода рендеринга документа через переданный движок
     //(например, SimpleRenderEngine или HighlightRenderEngine).
-
+        @Override
+    public void render(String content) {
+        // Используем переданный движок для рендеринга документа
+        System.out.println("Рендеринг документа '" + content + "' через движок:");
+        engine.render(content);
+    }
 }
 
